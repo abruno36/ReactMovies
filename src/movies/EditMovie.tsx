@@ -9,13 +9,13 @@ export default function EditMovie(){
     const selectedGenres: genreDTO[] = [{id: 1, name: 'Comedy'}]
 
     const nonSelectedMovieTheaters: movieTheaterDTO[] = 
-    [{id: 2, name: 'Agora'}]
+    [{id: 2, name: 'São Bernardo'}]
 
     const selectedMovieTheaters: movieTheaterDTO[] = 
-    [{id: 1, name: 'Sambil'}]
+    [{id: 1, name: 'São Paulo'}]
 
     const selectedActors: actorMovieDTO[] = [{
-        id: 1, name: 'Felipe', character: 'Geralt', picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tom_Holland_by_Gage_Skidmore.jpg/220px-Tom_Holland_by_Gage_Skidmore.jpg'
+        id: 1, name: 'Antonio', character: 'Bruno', picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tom_Holland_by_Gage_Skidmore.jpg/220px-Tom_Holland_by_Gage_Skidmore.jpg'
     }]
 
     return (

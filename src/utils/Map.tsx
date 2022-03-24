@@ -54,4 +54,3 @@ function MapClick(props: mapClickProps) {
 interface mapClickProps {
     setCoordinates(coordinates: coordinateDTO): void;
 }
-
