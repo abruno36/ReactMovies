@@ -5,6 +5,7 @@ import Button from './Button';
 import RecordsPerPageSelect from './RecordsPerPageSelect';
 import Pagination from './Pagination';
 import GenericList from './GenericList';
+import customConfirm from "./customConfirm";
 
 export default function IndexEntity<T>(props: indexEntityProps<T>) {
 
@@ -24,7 +25,6 @@ export default function IndexEntity<T>(props: indexEntityProps<T>) {
         })
             .then((response: AxiosResponse<T[]>) => {
                 const totalAmountOfRecords =
-
                     parseInt(response.headers['totalamountofrecords'], 10);
                 setTotalAmountOfPages(Math.ceil(totalAmountOfRecords / recordsPerPage));
                 setEntities(response.data);
@@ -48,7 +48,7 @@ export default function IndexEntity<T>(props: indexEntityProps<T>) {
             to={editUrl}>Edit</Link>
 
         <Button
-            //onClick={() => customConfirm(() => deleteEntity(id))}
+            onClick={() => customConfirm(() => deleteEntity(id))}
             className="btn btn-danger">Delete</Button>
     </>
 
