@@ -1,8 +1,8 @@
 export default function RecordsPerPageSelect(props: recordsPerPageSelectProps) {
     return (
-        <div className="mb-3" style={{ width: '130px', marginTop: '0.5rem' }}>
-            <label >Records per page:</label>
-            <select style={{ marginTop: '0.5rem' }}
+        <div className="mb-3" style={{ width: '150px' }}>
+            <label>Records per page:</label>
+            <select
                 className="form-select"
                 defaultValue={5}
                 onChange={e => {
