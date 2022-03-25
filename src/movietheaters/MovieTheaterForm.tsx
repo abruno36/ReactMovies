@@ -24,7 +24,7 @@ export default function MovieTheaterForm(props: movieTheaterForm){
             initialValues={props.model}
             onSubmit={props.onSubmit}
             validationSchema={Yup.object({
-                name: Yup.string().required('The name of movie theater is required').firstLetterUppercase()
+                name: Yup.string().required('This field is required').firstLetterUppercase()
             })}
         >
             {(formikProps) => (
