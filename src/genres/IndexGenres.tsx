@@ -1,20 +1,8 @@
-import axios, { AxiosResponse } from "axios";
-import { useEffect, useState } from "react";
-import { genreDTO } from "./genres.model";
 import { urlGenres } from '../endpoints';
 import IndexEntity from '../utils/IndexEntity';
+import { genreDTO } from "./genres.model";
 
-export default function IndexGenres(){
-
-    const [genres, setGenres] = useState<genreDTO[]>();
-    
-    useEffect(() => {
-        axios.get(urlGenres)
-            .then((Response: AxiosResponse<genreDTO[]>) => {
-                setGenres(Response.data);
-            })
-    }, [])
-
+export default function IndexGenres() {
     return (
         <>
             <IndexEntity<genreDTO>
