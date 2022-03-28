@@ -11,6 +11,7 @@ import {faStar} from '@fortawesome/free-solid-svg-icons';
 
 library.add(faStar);
 
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
